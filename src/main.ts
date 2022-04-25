@@ -1,37 +1,16 @@
-/*
- * @@file: 
- * @@Author: cuihonglei <cuihonglei@baidu.com>
- * @@Date: Do not edit
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-04-12 15:50:06
- */
 import { createApp, App} from 'vue';
 import AppRoot from './App.vue';
 import { createRouter, createWebHistory, RouterHistory, Router } from 'vue-router';
 import routes from './router';
 import Elements from './common/elements';
 import './public-path';
-//const app = createApp(App);
-// app.use(Elements);
-// app.mount('#app');
-
-
-// function qiankun(){
-    
-//     if (window.__POWERED_BY_QIANKUN__) {
-//         // eslint-disable-next-line no-undef
-//         __webpack_public_path__ = window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__;
-//     }
-//     console.log('cui', __webpack_public_path__)
-// }
-// qiankun();
 let router: any;
 let instance: any;
 let history : any;
 // eslint-disable-next-line @typescript-eslint/init-declarations
 function render(props: any = {}) {
     const { container } = props;
-    history = createWebHistory(window.__POWERED_BY_QIANKUN__ ? '/platform/micromarketing' : '/');
+    history = createWebHistory(window.__POWERED_BY_QIANKUN__ ? '/webpack5-vue3' : '/');
     router = createRouter({
         history,
         routes,

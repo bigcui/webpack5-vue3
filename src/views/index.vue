@@ -1,10 +1,4 @@
-<!--
- * @@file:入口
- * @@Author: cuihonglei <cuihonglei@baidu.com>
- * @@Date: Do not edit
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-04-12 13:01:17
--->
+
 <template>
     <el-config-provider :locale="locale">
         <my-header/>

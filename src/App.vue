@@ -1,10 +1,4 @@
-<!--
- * @@file: app
- * @@Author: cuihonglei <cuihonglei@baidu.com>
- * @@Date: Do not edit
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-04-12 13:03:02
--->
+
 <template>
   <div class="app">
     <div id="nav">
