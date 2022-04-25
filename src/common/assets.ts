@@ -15,7 +15,7 @@ export function getAssetSrc(asset: Asset): string {
     let result = '';
     switch (asset) {
         case Asset.baidu: {
-            result = vitePack ? new URL('../assets/baidu.jpeg', import.meta.url).href : require('@/assets/baidu.jpeg');
+            result = vitePack ? new URL('../assets/success.jpeg', import.meta.url).href : require('@/assets/baidu.jpeg');
             break;
         }
         case Asset.success: {

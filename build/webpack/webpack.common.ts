@@ -29,7 +29,7 @@ const config: webpack.Configuration | webpack.WebpackOptionsNormalized = {
     output: {
         path: resolve('dist'),
         library: {
-            name: `micromarketing-[name]`,
+            name: `webpack5-vue3-[name]`,
             type: 'umd',
             auxiliaryComment: {
                 root: 'Root Comment',
@@ -39,12 +39,6 @@ const config: webpack.Configuration | webpack.WebpackOptionsNormalized = {
             },
         },
         umdNamedDefine: true,
-      //  libraryTarget: 'micromarketing'
-      //},
-      //libraryTarget: 'umd2',
-    //    //  auxiliaryComment: 'Test Comment',
-    //     clean: true,
-    // globalObject: 'this',
     },
     resolve: {
         extensions: [
