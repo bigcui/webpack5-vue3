@@ -5,16 +5,13 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const appMode = process.env.NODE_ENV;
 const PROJECT_NAME = 'micro-yoda-marketing';
-const publicPath = appMode === 'test' ? `https://aiff.cdn.bcebos.com/${PROJECT_NAME}/qa/`
-    : appMode === 'online' ? `https://fe-aff.bj.bcebos.com/${PROJECT_NAME}/online/`
-        : appMode === 'preonline' ? `https://fe-aff-preonline.bj.bcebos.com/${PROJECT_NAME}/preonline/`
-            : './';
+const publicPath = './'
 console.log('publicPath', publicPath);
 export default merge(commonConfig, {
     mode: 'production',
-    output: {
-        publicPath
-    },
+    // output: {
+    //     publicPath
+    // },
     optimization: {
         moduleIds: 'deterministic',
     },
